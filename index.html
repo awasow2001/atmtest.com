@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> Atm Mali </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" >
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.htlm"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">A PROPROS</a></li>
+                    <li><a href="">CARRIERES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1> transitaire</h1>
+            <p> transitaire malien</p>
+            <a href="" class="hero-btn">numero</a>
+
+        </div>
+
+    </section>
+    <!-- contact -->
+
+    <section class="contact">
+        <h1>pour nous joindre</h1>
+        <p> numero 438 866 0434, mail:awadjibrilsow@gmail.com</p>
+
+        <div class="row">
+            <div class="contact-col">
+                <h3> contacturg</h3>
+                <p> pour nous joindre en cas d'urgence.</p>
+
+            </div>
+            <div class="contact-col">
+                <h3> contactpasurgent</h3>
+                <p> pour nous joindre en casde non urgence.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- localisation -->
+
+    <section class="adresse">
+
+        <h1> notre adresse</h1>
+        <p> 165 boulevard maloney est.</p>
+
+        <div class="row">
+            <div class="adresse-col">
+                <img src="images/adresse.png">
+                <div class="layer">
+                    <h3> atm mali</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- javaScript dor toggle bar menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+</html>
